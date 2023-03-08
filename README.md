@@ -9,8 +9,21 @@ Before you begin, you should have the following tools installed on your local ma
 - kubectl
 - Git
 
-You can install Prerequisites by doing this steps. [https://trainwithshubham.hashnode.dev/prerequisite-for-deployment-of-a-reddit-copy-on-kubernetes-with-ingress-enabled]().
+You can install Prerequisites by doing this steps. 
+# Steps:-
 
+# For Docker Installation
+sudo apt-get update
+sudo apt-get install docker.io -y
+sudo usermod -aG docker $USER && newgrp docker
+
+# For Minikube & Kubectl
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube 
+
+sudo snap install kubectl --classic
+minikube start --driver=docker
+_______________________________________________________________________________________
 
 ## Installation
 Follow these steps to install and run the Reddit clone app on your local machine:
