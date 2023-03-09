@@ -1,5 +1,7 @@
 FROM node:19-alpine3.15
 
+MAINTAINER nitesh
+
 WORKDIR /reddit-clone
 
 COPY . /reddit-clone
